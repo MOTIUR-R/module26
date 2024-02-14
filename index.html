@@ -44,44 +44,94 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = W x I</p>
                       <div class="flex">
-                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="W" name="" id=""> <span class="mr-2 ml-2">cm</span>
-                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="I" name="" id=""> <span class="ml-2">cm</span>
+                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="W" name="" id="Rectangle-lenth"> <span class="mr-2 ml-2">cm</span>
+                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="I" name="" id="rectangle-with"> <span class="ml-2">cm</span>
+                      </div>
+                      <div>
+                        <p class="">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions justify-end">
                         <button onclick="rectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                  <!-- tringle card -->
-                <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
                   <!-- Parallelogram card -->
                 <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b x h</p>
+                      <div class="flex">
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="base" type="text" name="" id="peralalgram-base">
+                        <span class="ml-1 mr-1">cm</span>
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="height" type="text" name="" id="Parallelogram-height">
+                        <span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p>area: <span id="per-erea"></span> cm<sup>2</sup></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="CalculateePralleogram()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                  <!-- Rhombus card -->
+                  <!-- Rhombous card -->
                 <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Rhombous</h2>
+                      <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p> 
+                      <div class="flex">
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="d1" type="text" name="" id="">
+                        <span class="ml-1 mr-1">cm</span>
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="d2" type="text" name="" id="">
+                        <span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p>area: <span id="pentagon-erea"></span> cm<sup>2</sup></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pentagon card -->
+                <div class="card w-auto bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) = 0.5 x p x b</p>
+                      <div class="flex">
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="p" type="text" name="" id="pentagon-pera">
+                        <span class="ml-1 mr-1">cm</span>
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="b" type="text" name="" id="pentagon-apod">
+                        <span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p>area: <span id="pentagon-erea"></span> cm<sup>2</sup></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculatePentagon()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- eliplis card -->
+                <div class="card w-auto bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area (A) = ab</p>
+                      <div class="flex">
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="a" type="text" name="" id="">
+                        <span class="ml-1 mr-1">cm</span>
+                        <input class="w-20 text-2xl p-2 rounded-sm" placeholder="b" type="text" name="" id="">
+                        <span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p>area: <span id="pentagon-erea"></span> cm<sup>2</sup></p>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -94,5 +144,7 @@
     </main>
     <script src="js/Triangle.js"></script>
     <script src="js/Rectangle.js"></script>
+    <script src="js/peralalgram.js"></script>
+    <script src="js/Pentagon.js"></script>
 </body>
 </html>
